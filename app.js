@@ -16,6 +16,7 @@ input.addEventListener("change", function () {
     if (!/^\d{11}$/.test(input.value)) {
         divError.textContent = "TC Kimlik Numarası 11(onbir) haneli olmalı ve sadece rakam içermeli!";
         divError.style.color = "red";
+        divError.style.textAlign = "center";
         input.after(divError);
         return;
     }
